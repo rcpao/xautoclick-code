@@ -1,0 +1,42 @@
+
+<B>Users</B>
+<PRE><DIV CLASS="commandline">
+xAutoClick(1) manual page...
+
+Blabla
+
+</DIV></PRE>
+<P>
+
+<B>Compiling from source</B>
+<P>
+Unpack the archive:
+<PRE><B><DIV CLASS="commandline">
+tar -xvzf xautoclick-<version>-src.tar.gz
+
+</DIV></B></PRE>
+...and run the following commands:
+<BR>
+
+<PRE><B><DIV CLASS="commandline">
+cd xautoclick-<version>
+./configure
+make
+sudo make install
+
+</DIV></B></PRE>
+Depending on which libraries are available on your system, any of
+<B>aautoclick</B>,
+<B>gautoclick</B>,
+<B>gautoclick2</B> or
+<B>qtautoclick</B> should work now. If it
+fails to build or can't find your libraries, try:
+<BR>
+
+<PRE><B><DIV CLASS="commandline">
+./configure --help
+
+</DIV></B></PRE>
+Or send a <A HREF="mailinglists.html">bug report</A>.
+<P>
+

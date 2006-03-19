@@ -1,0 +1,7 @@
+
+<IMG SRC="http://sourceforge.net/dbimage.php?id=63861" WIDTH="157"
+HEIGHT="157"><BR>
+<I>Sun Mar 19 19:23:44 CET 2006</I><BR>
+gautoclick v0.15 - GTK+ 1.2 version<BR>
+<P>
+

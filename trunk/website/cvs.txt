@@ -1,0 +1,25 @@
+
+You can get the latest development sources from CVS.
+<P>
+<HR>
+
+<B>Users</B>
+
+<PRE><B><DIV CLASS="commandline">
+cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick login
+cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick co -P xautoclick
+
+</DIV>
+</B></PRE>
+<P>
+<HR>
+
+<B>Developers</B>
+
+<PRE><B><DIV CLASS="commandline">
+export CVS_RSH=ssh
+cvs -z3 -d:ext:developername@cvs.sourceforge.net:/cvsroot/xautoclick co -P xautoclick
+
+</DIV>
+</B></PRE>
+
