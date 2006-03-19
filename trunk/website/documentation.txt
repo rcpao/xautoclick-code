@@ -12,14 +12,14 @@ Blabla
 <P>
 Unpack the archive:
 <PRE><B><DIV CLASS="commandline">
-tar -xvzf xautoclick-<version>-src.tar.gz
+tar -xvzf xautoclick-&lt;version&gt;-src.tar.gz
 
 </DIV></B></PRE>
 ...and run the following commands:
 <BR>
 
 <PRE><B><DIV CLASS="commandline">
-cd xautoclick-<version>
+cd xautoclick-&lt;version&gt;
 ./configure
 make
 sudo make install
