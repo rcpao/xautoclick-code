@@ -1,11 +1,14 @@
 
+<B>DOCUMENTATION</B>
+<P>
+
 <B>Users</B>
-<PRE><DIV CLASS="commandline">
+<PRE><B><DIV CLASS="commandline">
 xAutoClick(1) manual page...
 
 Blabla
 
-</DIV></PRE>
+</DIV></B></PRE>
 <P>
 
 <B>Compiling from source</B>

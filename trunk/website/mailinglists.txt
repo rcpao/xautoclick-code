@@ -1,4 +1,7 @@
 
+<B>MAILINGLISTS</B>
+<P>
+
 Before posting to any of these mailing lists, you are supposed to be
 familiar with the
 <A HREF="http://www.dtcc.edu/cs/rfc1855.html" TARGET="_new">Netiquette</A>.
@@ -9,7 +12,7 @@ familiar with the
 <B>Users</B>
 <UL>
 <LI> xautoclick-users  - general support mailing list for user questions and bugreports<BR>
-(<A HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-users">subscribe</A> :: <A HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-users">archive</A>)
+(<A TARGET="_new" HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-users">subscribe</A> :: <A TARGET="_new" HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-users">archive</A>)
 </LI>
 </UL>
 <P>
@@ -19,10 +22,10 @@ familiar with the
 <B>Development</B>
 <UL>
 <LI> xautoclick-devel - development related discussion (send patches here)<BR>
-(<A HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-devel">subscribe</A> :: <A HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-devel">archive</A>)
+(<A TARGET="_new" HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-devel">subscribe</A> :: <A TARGET="_new" HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-devel">archive</A>)
 </LI>
 <LI> xautoclick-cvslog - CVS commit diffs are sent and discussed here<BR>
-(<A HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-cvslog">subscribe</A> :: <A HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-cvslog">archive</A>)
+(<A TARGET="_new" HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-cvslog">subscribe</A> :: <A TARGET="_new" HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-cvslog">archive</A>)
 </LI>
 </UL>
 <P>

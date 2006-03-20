@@ -1,11 +1,18 @@
 
+<B>NEWS</B>
+<P>
+
+<DIV CLASS="news">
 <I>Sat Mar 18 18:53:16 CET 2006</I><BR>
 Project started. Initial import in CVS and set up this very basic website.<BR>
 <I>--Ivo</I>
+</DIV>
 
-<HR>
+<P>
 
+<DIV CLASS="news">
 <I>Fri Mar 17 2006</I><BR>
 Project approved by SourceForge staff.<BR>
 <I>--Ivo</I>
+</DIV>
 

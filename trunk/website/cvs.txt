@@ -1,9 +1,14 @@
 
+<B>CVS</B>
+<P>
+
 You can get the latest development sources from CVS.
 <P>
 <HR>
 
 <B>Users</B>
+<P>
+Checking out the source code:
 
 <PRE><B><DIV CLASS="commandline">
 cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick login
@@ -12,6 +17,14 @@ cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick co -P xauto
 </DIV>
 </B></PRE>
 <P>
+Updating an existing checkout:
+
+<PRE><B><DIV CLASS="commandline">
+cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick up -dPA
+
+</DIV>
+</B></PRE>
+
 <HR>
 
 <B>Developers</B>
