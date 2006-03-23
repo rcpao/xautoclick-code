@@ -62,7 +62,7 @@ void common_start_button(void) {
 /* ------------------------------------------------------------------------- */
 
 void common_alarm_callback(void) {
-    int interval, random, sign, rv, alarmtime;
+    int interval, randomfactor, sign, rv, alarmtime;
 
     if (!counter)   /* counter is set to zero when stop is pressed */ 
         return;
@@ -76,8 +76,11 @@ void common_alarm_callback(void) {
     interval = get_spin_value(SPIN_INTERVAL);
 
     sign = rand() / (RAND_MAX >> 1);
-    random = get_spin_value(SPIN_RANDOM);
-    rv = (sign ? 1 : -1) * (rand() / (RAND_MAX / random));
+    randomfactor = get_spin_value(SPIN_RANDOM);
+    if (randomfactor > 0 )
+        rv = (sign ? 1 : -1) * (rand() / (RAND_MAX / randomfactor));
+    else
+        rv = 0;
 
 #ifdef DEBUG
     printf("rv = %i\n", rv);
