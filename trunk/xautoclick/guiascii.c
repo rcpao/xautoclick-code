@@ -36,7 +36,7 @@
 
 static Display *display;
 
-static int predelay, interval, random, numberofclicks;
+static int predelay, interval, randomfactor, numberofclicks;
 
 static int sleeptime;
 
@@ -67,7 +67,7 @@ int get_spin_value(spin_t spin) {
         return interval;
         break;
     case SPIN_RANDOM:
-        return random;
+        return randomfactor;
         break;
     case SPIN_NUMBER:
         return numberofclicks;
@@ -89,7 +89,7 @@ void set_spin_value(spin_t spin, int value) {
         interval = value;
         break;
     case SPIN_RANDOM:
-        random = value;
+        randomfactor = value;
         break;
     case SPIN_NUMBER:
         numberofclicks = value;
@@ -124,7 +124,7 @@ int init_gui(int argc, char **argv) {
 
     predelay = 2000;
     interval = 1024;
-    random = 64;
+    randomfactor = 64;
     numberofclicks = 32;
 
     printf("aautoclick\n\n");
@@ -153,7 +153,7 @@ static void print_variables(void) {
 
     printf("pre-delay:          %i\n", predelay);
     printf("interval:           %i\n", interval);
-    printf("random +/-:         %i\n", random);
+    printf("random +/-:         %i\n", randomfactor);
     printf("number of clicks:   %i\n", numberofclicks);
     printf("\n");
 }
@@ -209,7 +209,7 @@ void main_loop(void) {
             read_int(&interval);
             break;
         case 'r':
-            read_int(&random);
+            read_int(&randomfactor);
             break;
         case 'n':
             read_int(&numberofclicks);
