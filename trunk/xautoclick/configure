@@ -577,7 +577,7 @@ echores "$_pkg_config"
 if test "$_pkg_config" != "no" ; then
     echocheck "GTK+ 2.0"
     
-    if $_pkg_config gtk+-2.0 --exists ; then
+    if $_pkg_config gtk+-2.0 --exists 1>/dev/null 2>&1 ; then
         echores "yes"
         echocheck "GTK+ 2.0 cflags"
         _inc_gtk2=`$_pkg_config gtk+-2.0 --cflags 2>&1`
