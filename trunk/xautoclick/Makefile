@@ -41,6 +41,10 @@ PRGqt3		= qtautoclick
 OBJSqt3		= $(OBJScommon) \
 			  guiqt3.o \
 
+PRGcmdl		= cautoclick
+OBJScmdl	= $(OBJScommon) \
+			  guicommandline.o \
+
 ifeq ($(__BUILD_GTK1__),yes)
 INCLUDES	+= $(INCLUDES_GTK1)
 LDFLAGS		+= $(LDFLAGS_GTK1)
@@ -61,6 +65,11 @@ INCLUDES	+= $(INCLUDES_QT3)
 LDFLAGS		+= $(LDFLAGS_QT3)
 endif
 
+ifeq ($(__BUILD_COMMANDLINE__),yes)
+INCLUDES	+= $(INCLUDES_COMMANDLINE)
+LDFLAGS		+= $(LDFLAGS_COMMANDLINE)
+endif
+
 .PHONY:	all
 all:
 ifeq ($(HAVE_GTK1),yes)
@@ -75,6 +84,9 @@ endif
 ifeq ($(HAVE_QT3),yes)
 	__BUILD_QT3__=yes $(MAKE) -C . $(PRGqt3)
 endif
+ifeq ($(HAVE_COMMANDLINE),yes)
+	__BUILD_COMMANDLINE__=yes $(MAKE) -C . $(PRGcmdl)
+endif
 
 $(PRGgtk1):		$(OBJSgtk1)
 	$(LD) -o $@ $(OBJSgtk1) $(LDFLAGS)
@@ -87,6 +99,9 @@ $(PRGascii):	$(OBJSascii)
 
 $(PRGqt3):		$(OBJSqt3)
 	$(LD) -o $@ $(OBJSqt3) $(LDFLAGS)
+
+$(PRGcmdl):		$(OBJScmdl)
+	$(LD) -o $@ $(OBJScmdl) $(LDFLAGS)
 
 guigtk2.c:
 	ln -s guigtk1.c guigtk2.c
@@ -135,7 +150,7 @@ SILENCE = @
 
 .PHONY:	clean
 clean:
-	rm -f *.o $(PRGgtk1) $(PRGgtk2) $(PRGqt3) $(PRGascii) guigtk2.c
+	rm -f *.o $(PRGgtk1) $(PRGgtk2) $(PRGqt3) $(PRGascii) $(PRGcmdl) guigtk2.c
 	rm -rf .deps
 
 .PHONY:	distclean

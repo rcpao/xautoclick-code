@@ -74,6 +74,8 @@ _ld_gtk2=
 _inc_glib2=
 _ld_glib2=
 
+_commandline=no
+
 # check environment
 
 if test "$CC" != "" ; then
@@ -503,6 +505,8 @@ if test "$_xtest" = "yes" ; then
 
 # ascii version only needs X11/Xtest
 _ascii=yes
+# same for command line version
+_commandline=yes
 
 # GTK1 checks
 echocheck "gtk-config"
@@ -722,6 +726,7 @@ CXX=$_cxx
 CFLAGS=$_cflags $_optimize $_inttypes $_stdint $_malloc $_unistd
 INCLUDES=$_inc_extra
 INCLUDES_ASCII=$_inc_x11
+INCLUDES_COMMANDLINE=$_inc_x11
 INCLUDES_GTK1=$_inc_gtk1 $_inc_glib $_inc_x11
 INCLUDES_GTK2=$_inc_gtk2 $_inc_glib $_inc_x11
 INCLUDES_QT3=$_inc_qt3 $_inc_x11
@@ -730,6 +735,7 @@ CXXFORDEPS=$_cxxfordeps
 LD=$_cc
 LDFLAGS=$_ldflags
 LDFLAGS_ASCII=$_ld_x11
+LDFLAGS_COMMANDLINE=$_ld_x11
 LDFLAGS_GTK1=$_ld_gtk1 $_ld_glib $_ld_x11
 LDFLAGS_GTK2=$_ld_gtk2 $_ld_glib $_ld_x11
 LDFLAGS_QT3=$_ld_qt3 $_ld_x11
@@ -742,12 +748,14 @@ HAVE_ASCII=$_ascii
 HAVE_GTK1=$_gtk1
 HAVE_GTK2=$_gtk2
 HAVE_QT3=$_qt3
+HAVE_COMMANDLINE=$_commandline
 EOF
 
 echo "done."
 
 echo
 echo "aAutoClick    : $_ascii"
+echo "cAutoClick    : $_commandline"
 echo "gAutoClick    : $_gtk1"
 echo "gAutoClick2   : $_gtk2"
 echo "qtAutoClick   : $_qt3"
