@@ -26,6 +26,8 @@
 /* ------------------------------------------------------------------------- */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <X11/Xlib.h>
 #include <X11/extensions/XTest.h>
 
@@ -36,7 +38,7 @@
 
 static Display *display;
 
-static int predelay, interval, random, numberofclicks;
+static int predelay, interval, randomfactor, numberofclicks;
 
 static int sleeptime;
 
@@ -67,7 +69,7 @@ int get_spin_value(spin_t spin) {
         return interval;
         break;
     case SPIN_RANDOM:
-        return random;
+        return randomfactor;
         break;
     case SPIN_NUMBER:
         return numberofclicks;
@@ -89,7 +91,7 @@ void set_spin_value(spin_t spin, int value) {
         interval = value;
         break;
     case SPIN_RANDOM:
-        random = value;
+        randomfactor = value;
         break;
     case SPIN_NUMBER:
         numberofclicks = value;
@@ -113,7 +115,24 @@ void set_button_sensitive(button_t button, int state) {
 
 /* ------------------------------------------------------------------------- */
 
+static void printhelp(char *myname) {
+
+    printf("usage: %s [-h][-i value][-n value][-p value][-r value]\n", myname);
+    exit(0);
+}
+
+/* ------------------------------------------------------------------------- */
+
+#define option_with_argument(v,m,c) \
+            c++; \
+            if (c == argc) { \
+                fprintf(stderr, "option %s needs an argument\n", m); \
+                return 0; \
+            } \
+            v = atoi(argv[c]);
+
 int init_gui(int argc, char **argv) {
+    int c;
 
     display = XOpenDisplay(NULL);
 
@@ -124,10 +143,36 @@ int init_gui(int argc, char **argv) {
 
     predelay = 2000;
     interval = 1024;
-    random = 0;
+    randomfactor = 0;
     numberofclicks = 32;
 
     /* parse command line */
+
+    c=1;
+
+    while (c<argc) {
+
+        if (!strcmp(argv[c], "--help")) {
+            printhelp(argv[0]);
+        } else if (!strcmp(argv[c], "-help")) {
+            printhelp(argv[0]);
+        } else if (!strcmp(argv[c], "-h")) {
+            printhelp(argv[0]);
+        } else if (!strcmp(argv[c], "-i")) {
+            option_with_argument(interval, "-i", c);
+        } else if (!strcmp(argv[c], "-n")) {
+            option_with_argument(numberofclicks, "-n", c);
+        } else if (!strcmp(argv[c], "-p")) {
+            option_with_argument(predelay, "-p", c);
+        } else if (!strcmp(argv[c], "-r")) {
+            option_with_argument(randomfactor, "-r", c);
+        } else {
+            fprintf(stderr, "unknown command line option: %s\n", argv[c]);
+            return 0;
+        }
+
+        c++;
+    }
 
     return 1;
 }
