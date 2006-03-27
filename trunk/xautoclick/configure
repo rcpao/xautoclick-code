@@ -256,8 +256,8 @@ fi
 cxx_run=`( $_cxx ) 2>&1`
 if test "$?" -gt 1; then
     if test "$_cxx" = "$_cc" ; then
-    echores "no"
-    die "can't find compiler"
+        echores "no"
+        die "can't find compiler"
     else
         echo "can't find $_cxx"
         echocheck "$_cc as c++ compiler"
