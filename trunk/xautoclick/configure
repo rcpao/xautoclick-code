@@ -587,27 +587,27 @@ echores "$_pkg_config"
 if test "$_pkg_config" != "no" ; then
     echocheck "GTK+ 2.0"
     
-    if $_pkg_config gtk+-2.0 --exists 1>/dev/null 2>&1 ; then
+    if $_pkg_config gtk+-2.0 --exists 1>/dev/null 2>>$TMPLOG ; then
         echores "yes"
         echocheck "GTK+ 2.0 cflags"
-        _inc_gtk2=`$_pkg_config gtk+-2.0 --cflags 2>&1`
+        _inc_gtk2=`$_pkg_config gtk+-2.0 --cflags 2>>$TMPLOG`
         echores "$_inc_gtk2"
         echocheck "GTK+ 2.0 libs"
-        _ld_gtk2=`$_pkg_config gtk+-2.0 --libs 2>&1`
+        _ld_gtk2=`$_pkg_config gtk+-2.0 --libs 2>>$TMPLOG`
         echores "$_ld_gtk2"
 
         echocheck "glib 2.0 cflags"
-        _inc_glib2=`$_pkg_config glib-2.0 --cflags 2>&1`
+        _inc_glib2=`$_pkg_config glib-2.0 --cflags 2>>$TMPLOG`
         echores "$_inc_glib2"
         echocheck "glib 2.0 libs"
-        _ld_glib2=`$_pkg_config glib-2.0 --libs 2>&1`
+        _ld_glib2=`$_pkg_config glib-2.0 --libs 2>>$TMPLOG`
         echores "$_ld_glib2"
 
         _gtk2=yes
     else
+        $_pkg_config gtk+-2.0 --cflags >> $TMPLOG 2>&1
         echores "no"
     fi
-
 
 else
     echores "Not building gAutoClick2"
