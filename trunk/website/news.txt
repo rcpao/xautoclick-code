@@ -3,16 +3,23 @@
 <P>
 
 <DIV CLASS="news">
-<I>Sat Mar 18 18:53:16 CET 2006</I><BR>
-Project started. Initial import in CVS and set up this very basic website.<BR>
-<I>--Ivo</I>
+v0.18 is released. Please test on as many X11 platforms you can find and
+if it doesn't work, send a <A HREF="mailinglists.html">bug report</A>.
+<BR>
+<I>Tue Mar 28 17:11:56 CEST 2006 --Ivo</I>
 </DIV>
 
 <P>
 
 <DIV CLASS="news">
-<I>Fri Mar 17 2006</I><BR>
+Project started. Initial import in CVS and set up this very basic website.<BR>
+<I>Sat Mar 18 18:53:16 CET 2006 --Ivo</I>
+</DIV>
+
+<P>
+
+<DIV CLASS="news">
 Project approved by SourceForge staff.<BR>
-<I>--Ivo</I>
+<I>Fri Mar 17 2006 --Ivo</I>
 </DIV>
 
