@@ -161,8 +161,32 @@ distclean:		clean
 .PHONY:	install
 install:		all
 	@echo Installing to $(PREFIX)
+	if test ! -d $(PREFIX)/bin ; then mkdir -p $(PREFIX)/bin ; fi
+	if test ! -d $(PREFIX)/man/man1 ; then mkdir -p $(PREFIX)/man/man1 ; fi
+ifeq ($(HAVE_GTK1),yes)
+	cp $(PRGgtk1) $(PREFIX)/bin
+endif
+ifeq ($(HAVE_GTK2),yes)
+	cp $(PRGgtk2) $(PREFIX)/bin
+endif
+ifeq ($(HAVE_QT3),yes)
+	cp $(PRGqt3) $(PREFIX)/bin
+endif
+ifeq ($(HAVE_ASCII),yes)
+	cp $(PRGascii) $(PREFIX)/bin
+endif
+ifeq ($(HAVE_COMMANDLINE),yes)
+	cp $(PRGcmdl) $(PREFIX)/bin
+endif
+	cp xautoclick.1 $(PREFIX)/man/man1
 
 .PHONY: uninstall
 uninstall:
 	@echo Uninstalling from $(PREFIX)
+	rm -f $(PREFIX)/bin/$(PRGgtk1)
+	rm -f $(PREFIX)/bin/$(PRGgtk2)
+	rm -f $(PREFIX)/bin/$(PRGqt3)
+	rm -f $(PREFIX)/bin/$(PRGascii)
+	rm -f $(PREFIX)/bin/$(PRGcmdl)
+	rm -f $(PREFIX)/man/man1/xautoclick.1
 

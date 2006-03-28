@@ -767,6 +767,9 @@ echo "gAutoClick2   : $_gtk2"
 echo "qtAutoClick   : $_qt3"
 
 echo
+echo "Installation to $_prefix"
+
+echo
 echo "Now type '$_make' to build."
 echo
 
