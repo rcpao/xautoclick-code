@@ -10,8 +10,8 @@ Instructions on how to
 <P>
 Here's the manual page :)
 
-<PRE><B><DIV CLASS="commandline">
-XAUTOCLICK(1)                    User Commands                   XAUTOCLICK(1)
+<DIV CLASS="commandline">
+<PRE><B STYLE="color: black;">XAUTOCLICK(1)                    User Commands                   XAUTOCLICK(1)
 
 
 
@@ -108,7 +108,9 @@ WEB
 
 
 xautoclick 0.18                   March 2006                     XAUTOCLICK(1)
-</DIV></B></PRE>
+
+</B></PRE>
+</DIV>
 <P>
 
 <HR>
@@ -117,20 +119,21 @@ xautoclick 0.18                   March 2006                     XAUTOCLICK(1)
 <B>Compiling from source</B>
 <P>
 Unpack the archive:
-<PRE><B><DIV CLASS="commandline">
-tar -xvzf xautoclick-&lt;version&gt;-src.tar.gz
+<P>
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">tar -xvzf xautoclick-&lt;version&gt;-src.tar.gz
 
-</DIV></B></PRE>
+</B></PRE></DIV>
+<P>
 ...and run the following commands:
-<BR>
+<P>
 
-<PRE><B><DIV CLASS="commandline">
-cd xautoclick-&lt;version&gt;
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">cd xautoclick-&lt;version&gt;
 ./configure
 make
 sudo make install
 
-</DIV></B></PRE>
+</B></PRE></DIV>
+<P>
 Depending on which libraries are available on your system, any of
 <B>aautoclick</B>,
 <B>cautoclick</B>,
@@ -138,12 +141,12 @@ Depending on which libraries are available on your system, any of
 <B>gautoclick2</B> or
 <B>qtautoclick</B> should work now. If it
 fails to build or can't find your libraries, try:
-<BR>
+<P>
 
-<PRE><B><DIV CLASS="commandline">
-./configure --help
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">./configure --help
 
-</DIV></B></PRE>
+</B></PRE></DIV>
+<P>
 Or send a <A HREF="mailinglists.html">bug report</A>, including the full output
 of ./configure --enable-warnings, the configure.log file and (if you came
 that far) the output of make.

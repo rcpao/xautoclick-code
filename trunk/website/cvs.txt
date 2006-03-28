@@ -9,30 +9,27 @@ You can get the latest development sources from CVS.
 <B>Users</B>
 <P>
 Checking out the source code:
-
-<PRE><B><DIV CLASS="commandline">
-cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick login
+<P>
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick login
 cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick co -P xautoclick
 
-</DIV>
 </B></PRE>
+</DIV>
 <P>
 Updating an existing checkout:
+<P>
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick up -dPA
 
-<PRE><B><DIV CLASS="commandline">
-cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick up -dPA
-
-</DIV>
 </B></PRE>
+</DIV>
 
 <HR>
 
 <B>Developers</B>
-
-<PRE><B><DIV CLASS="commandline">
-export CVS_RSH=ssh
+<P>
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">export CVS_RSH=ssh
 cvs -z3 -d:ext:developername@cvs.sourceforge.net:/cvsroot/xautoclick co -P xautoclick
 
-</DIV>
 </B></PRE>
+</DIV>
 
