@@ -3,6 +3,7 @@ ChangeLog
 
 $Id$
 
+v0.18	Finished manpage, webpage, small fixes to configure
 v0.17	Fixed a few bugs, added command line parser
 v0.16	Added command line version and preliminary manual page
 v0.15	Added GTK+ 2.0 detection to configure and have the GTK GUI compile
