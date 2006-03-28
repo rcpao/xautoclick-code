@@ -144,6 +144,8 @@ fails to build or can't find your libraries, try:
 ./configure --help
 
 </DIV></B></PRE>
-Or send a <A HREF="mailinglists.html">bug report</A>.
+Or send a <A HREF="mailinglists.html">bug report</A>, including the full output
+of ./configure --enable-warnings, the configure.log file and (if you came
+that far) the output of make.
 <P>
 
