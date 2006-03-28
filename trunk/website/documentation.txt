@@ -2,15 +2,118 @@
 <B>DOCUMENTATION</B>
 <P>
 
+Instructions on how to
+<A HREF="#compilefromsource">compile from source</A> are below.
+<HR>
+
 <B>Users</B>
+<P>
+Here's the manual page :)
+
 <PRE><B><DIV CLASS="commandline">
-xAutoClick(1) manual page...
+XAUTOCLICK(1)                    User Commands                   XAUTOCLICK(1)
 
-Blabla
 
+
+NAME
+       aautoclick  - automatically click the mouse (ASCII version)
+       cautoclick  - automatically click the mouse (command line version)
+       gautoclick  - automatically click the mouse (GTK+ 1.2 version)
+       gautoclick2 - automatically click the mouse (GTK+ 2.0 version)
+       qtautoclick - automatically click the mouse (Qt 3.x version)
+
+SYNOPSIS
+       aautoclick
+       cautoclick [-h][-p value][-i value][-r value][-n value]
+       gautoclick
+       gautoclick2
+       qtautoclick
+
+DESCRIPTION
+       This  application enables you to automatically click the left mousebut-
+       ton.  It is designed to reduce strain on the wrist  muscles  caused  by
+       repetitive  mouse  clicking, which can lead to serious injury or impair
+       (RSI, Carpal Tunnel Syndrome, et cetera).  By specifying the  interval,
+       a random factor and the number of times to click, the program simulates
+       natural clicking.
+
+GUI
+       This section applies to all GUI versions, but, obviously,  not  to  the
+       command line version.  For the command line version, see below.
+
+       The GUI consists of several spinboxes and buttons.  The parameters have
+       the following meaning: (all times are in milliseconds)
+
+       pre-delay
+              the time the application waits before it starts  clicking  after
+              you have clicked start.
+
+       interval
+              the time the application waits between two clicks.
+
+       random +/-
+              for each click, the application adds or substracts a random fac-
+              tor between zero and this value to/from the interval time.
+
+       number of clicks
+              the number of times the apllication clicks.
+
+       You can also use the tap button to  click  a  rythm.   The  application
+       tries  to  determine  the  correct  parameters  to  mimic that clicking
+       behaviour.  Click the start button to start.  While it is  running  you
+       can  click  stop  to  stop the clicking before it reaches the number of
+       clicks specified.
+
+COMMAND LINE OPTIONS
+       These options only apply to  the  command  line  version  (cautoclick).
+       They are ignored by all GUI versions.
+
+       --help display help and exit
+       -h
+       -help
+
+       -i value
+              specify  the  interval,  which  is  the  time  between two mouse
+              clicks.  The time is specified in milliseconds (default:  1000).
+
+       -n value
+              specify  the  number  of mouse clicks.  The time is specified in
+              milliseconds (default: 32).
+
+       -p value
+              specify the pre-delay, which is the time the  application  waits
+              before  it  starts clicking.  The time is specified in millisec-
+              onds (default: 2000).
+
+       -r value
+              specify a random factor.  For every click, a random time between
+              0  and  this  value  is added to or subtracted from the interval
+              time.  The time is specified in milliseconds (default: 0).
+
+AUTHOR
+       Written by Ivo van Poorten
+
+REPORTING BUGS
+       Report bugs to xautoclick-users@lists.sourceforge.net
+
+COPYRIGHT
+       Copyright (C) 2006 by Ivo van Poorten
+       This is free software; see the source for copying conditions.  There is
+       NO  warranty;  not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
+       PURPOSE.
+
+WEB
+       http://xautoclick.sourceforge.net
+
+
+
+xautoclick 0.18                   March 2006                     XAUTOCLICK(1)
 </DIV></B></PRE>
 <P>
 
+<HR>
+
+<A NAME="compilefromsource"></A>
 <B>Compiling from source</B>
 <P>
 Unpack the archive:
@@ -30,6 +133,7 @@ sudo make install
 </DIV></B></PRE>
 Depending on which libraries are available on your system, any of
 <B>aautoclick</B>,
+<B>cautoclick</B>,
 <B>gautoclick</B>,
 <B>gautoclick2</B> or
 <B>qtautoclick</B> should work now. If it
