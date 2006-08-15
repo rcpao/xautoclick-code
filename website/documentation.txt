@@ -107,7 +107,7 @@ WEB
 
 
 
-xautoclick 0.90                  August 2006                     XAUTOCLICK(1)
+xautoclick 0.19                  August 2006                     XAUTOCLICK(1)
 
 </B></PRE>
 </DIV>
