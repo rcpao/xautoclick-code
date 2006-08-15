@@ -3,6 +3,15 @@
 <P>
 
 <DIV CLASS="news">
+v0.19 is released. I migrated the source repository to Subversion, increased
+the upper limits on all values and fixed a small bug in the Qt3 version.
+<BR>
+<I>Tue Aug 15 17:14:32 CEST 2006 --Ivo</I>
+</DIV>
+
+<P>
+
+<DIV CLASS="news">
 v0.18 is released. Please test on as many X11 platforms you can find and
 if it doesn't work, send a <A HREF="mailinglists.html">bug report</A>.
 <BR>

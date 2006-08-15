@@ -2,7 +2,7 @@
 <B>ABOUT</B>
 <P>
 
-This application enables you to automatically click the left
+This autoclicker application enables you to automatically click the left
 mousebutton. It is designed to reduce strain on the wrist muscles
 caused by repetitive mouse clicking, which can lead to serious injury or
 impair (RSI, Carpal Tunnel Syndrome, et cetera). By specifying the
