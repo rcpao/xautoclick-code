@@ -1,8 +1,8 @@
 
-<B>CVS</B>
+<B>Subversion</B>
 <P>
 
-You can get the latest development sources from CVS.
+You can get the latest development sources from Subversion.
 <P>
 <HR>
 
@@ -10,15 +10,14 @@ You can get the latest development sources from CVS.
 <P>
 Checking out the source code:
 <P>
-<DIV CLASS="commandline"><PRE><B STYLE="color: black;">cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick login
-cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick co -P xautoclick
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">svn co https://svn.sourceforge.net/svnroot/xautoclick/xautoclick
 
 </B></PRE>
 </DIV>
 <P>
 Updating an existing checkout:
 <P>
-<DIV CLASS="commandline"><PRE><B STYLE="color: black;">cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/xautoclick up -dPA
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">svn up
 
 </B></PRE>
 </DIV>
@@ -27,8 +26,8 @@ Updating an existing checkout:
 
 <B>Developers</B>
 <P>
-<DIV CLASS="commandline"><PRE><B STYLE="color: black;">export CVS_RSH=ssh
-cvs -z3 -d:ext:developername@cvs.sourceforge.net:/cvsroot/xautoclick co -P xautoclick
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">svn co https://svn.sourceforge.net/svnroot/xautoclick xautoclick
+svn ci &lt;file&gt; --username &lt;username&gt;
 
 </B></PRE>
 </DIV>
