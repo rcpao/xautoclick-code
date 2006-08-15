@@ -24,8 +24,8 @@ familiar with the
 <LI> xautoclick-devel - development related discussion (send patches here)<BR>
 (<A TARGET="_new" HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-devel">subscribe</A> :: <A TARGET="_new" HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-devel">archive</A>)
 </LI>
-<LI> xautoclick-cvslog - CVS commit diffs are sent and discussed here<BR>
-(<A TARGET="_new" HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-cvslog">subscribe</A> :: <A TARGET="_new" HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-cvslog">archive</A>)
+<LI> xautoclick-svnlog - Subversion commit diffs are sent and discussed here<BR>
+(<A TARGET="_new" HREF="http://lists.sourceforge.net/lists/listinfo/xautoclick-svnlog">subscribe</A> :: <A TARGET="_new" HREF="http://sourceforge.net/mailarchive/forum.php?forum=xautoclick-svnlog">archive</A>)
 </LI>
 </UL>
 <P>
