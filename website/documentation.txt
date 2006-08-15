@@ -56,7 +56,7 @@ GUI
               tor between zero and this value to/from the interval time.
 
        number of clicks
-              the number of times the apllication clicks.
+              the number of times the application clicks.
 
        You can also use the tap button to  click  a  rythm.   The  application
        tries  to  determine  the  correct  parameters  to  mimic that clicking
@@ -107,7 +107,7 @@ WEB
 
 
 
-xautoclick 0.18                   March 2006                     XAUTOCLICK(1)
+xautoclick 0.90                  August 2006                     XAUTOCLICK(1)
 
 </B></PRE>
 </DIV>
