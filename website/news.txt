@@ -5,7 +5,7 @@
 <DIV CLASS="news">
 v0.20 is released. <P>
 If v0.19 worked correctly for you, there's no need to
-upgrade. The only thing changed are various typos and a little more verbose
+upgrade. The only things changed are various typos and a little more verbose
 output of configure in case none of the needed development packages are
 installed. This confused a lot of new users, hence the update.
 <P>
