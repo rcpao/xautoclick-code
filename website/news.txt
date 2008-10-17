@@ -3,6 +3,23 @@
 <P>
 
 <DIV CLASS="news">
+v0.20 is released. <P>
+If v0.19 worked correctly for you, there's no need to
+upgrade. The only thing changed are various typos and a little more verbose
+output of configure in case none of the needed development packages are
+installed. This confused a lot of new users, hence the update.
+<P>
+If it does not work for you, please file a bugreport on the mailinglist.
+Contrary to what some seem to believe, this project is not abandoned. It's just
+that the current code seems to work correctly and I never get any bugreports or
+feature requests :)
+<BR>
+<I>Fri Oct 17 14:04:48 CEST 2008 --Ivo</I>
+</DIV>
+
+<P>
+
+<DIV CLASS="news">
 v0.19 is released. I migrated the source repository to Subversion, increased
 the upper limits on all values and fixed a small bug in the Qt3 version.
 <BR>
