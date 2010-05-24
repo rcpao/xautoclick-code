@@ -1,2 +1,2 @@
 #!/bin/bash
-groff -Tascii -man ../xautoclick/xautoclick.1 | sed -e 's/.\[1m//g' | sed -e 's/.\[0m//g' | sed -e 's/.\[22m//g' 
+groff -Tascii -man ../xautoclick/xautoclick.1 | sed -e 's/.\[1m//g' | sed -e 's/.\[0m//g' | sed -e 's/.\[22m//g' | col -bx

@@ -3,6 +3,19 @@
 <P>
 
 <DIV CLASS="news">
+v0.30 is released. <P>
+After four years, some new code has been added again! Changes in this version:
+<P>
+* Major code cleanup<br>
+* New Qt 4 GUI<br>
+* New FLTK GUI<br>
+<BR>
+<I>Mon May 24 17:53:21 CEST 2010 --Ivo</I>
+</DIV>
+
+<P>
+
+<DIV CLASS="news">
 v0.20 is released. <P>
 If v0.19 worked correctly for you, there's no need to
 upgrade. The only things changed are various typos and a little more verbose

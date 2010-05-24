@@ -11,7 +11,7 @@ Instructions on how to
 Here's the manual page :)
 
 <DIV CLASS="commandline">
-<PRE><B STYLE="color: black;">XAUTOCLICK(1)                    User Commands                   XAUTOCLICK(1)
+<PRE><B STYLE="color: black;"> XAUTOCLICK(1)                    User Commands                   XAUTOCLICK(1)
 
 
 
@@ -21,6 +21,8 @@ NAME
        gautoclick  - automatically click the mouse (GTK+ 1.2 version)
        gautoclick2 - automatically click the mouse (GTK+ 2.0 version)
        qtautoclick - automatically click the mouse (Qt 3.x version)
+       qt4autoclick - automatically click the mouse (Qt 4.x version)
+       fltkautoclick - automatically click the mouse (FLTK version)
 
 SYNOPSIS
        aautoclick
@@ -28,6 +30,8 @@ SYNOPSIS
        gautoclick
        gautoclick2
        qtautoclick
+       qt4autoclick
+       fltkautoclick
 
 DESCRIPTION
        This  application enables you to automatically click the left mousebut-
@@ -97,7 +101,7 @@ REPORTING BUGS
        Report bugs to xautoclick-users@lists.sourceforge.net
 
 COPYRIGHT
-       Copyright (C) 2006 by Ivo van Poorten
+       Copyright (C) 2006, 2010 by Ivo van Poorten
        This is free software; see the source for copying conditions.  There is
        NO  warranty;  not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR
        PURPOSE.
@@ -107,8 +111,7 @@ WEB
 
 
 
-xautoclick 0.19                  August 2006                     XAUTOCLICK(1)
-
+xautoclick 0.30                    May 2010                      XAUTOCLICK(1)
 </B></PRE>
 </DIV>
 <P>
@@ -120,7 +123,7 @@ xautoclick 0.19                  August 2006                     XAUTOCLICK(1)
 <P>
 Unpack the archive:
 <P>
-<DIV CLASS="commandline"><PRE><B STYLE="color: black;">tar -xvzf xautoclick-&lt;version&gt;-src.tar.gz
+<DIV CLASS="commandline"><PRE><B STYLE="color: black;">tar -xvzf xautoclick-&lt;version&gt;.tar.gz
 
 </B></PRE></DIV>
 <P>
@@ -138,8 +141,10 @@ Depending on which libraries are available on your system, any of
 <B>aautoclick</B>,
 <B>cautoclick</B>,
 <B>gautoclick</B>,
-<B>gautoclick2</B> or
-<B>qtautoclick</B> should work now. If it
+<B>gautoclick2</B>,
+<B>qtautoclick</B>,
+<B>qt4autoclick</B> or
+<B>fltkautoclick</B> should work now. If it
 fails to build or can't find your libraries, try:
 <P>
 

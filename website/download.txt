@@ -5,8 +5,8 @@
 <B>Source download</B>
 <P>
 <UL>
-<LI> <A TARGET="_new" HREF="http://prdownloads.sourceforge.net/xautoclick/xautoclick-0.20-src.tar.gz?download">xautoclick-0.20-src.tar.gz</A> </LI>
-<LI> <A TARGET="_new" HREF="http://prdownloads.sourceforge.net/xautoclick/xautoclick-0.20-src.tar.bz2?download">xautoclick-0.20-src.tar.bz2</A> </LI>
+<LI> <A TARGET="_new" HREF="http://downloads.sourceforge.net/project/xautoclick/xautoclick/xautoclick-0.30/xautoclick-0.30.tar.bz2">xautoclick-0.30.tar.bz2</A> </LI>
+<LI> <A TARGET="_new" HREF="http://downloads.sourceforge.net/project/xautoclick/xautoclick/xautoclick-0.30/xautoclick-0.30.tar.gz">xautoclick-0.30.tar.gz</A> </LI>
 </UL>
 
 <HR>
