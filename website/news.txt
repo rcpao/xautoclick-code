@@ -3,6 +3,19 @@
 <P>
 
 <DIV CLASS="news">
+v0.31 is released. <P>
+Changes in this version:
+<P>
+* fix compiler check in configure
+* fix missing include (QT4 gui)
+* fix linking of FLTK version
+<BR>
+<I>Sun Apr  1 18:36:15 CEST 2012 --Ivo</I>
+</DIV>
+
+<P>
+
+<DIV CLASS="news">
 v0.30 is released. <P>
 After four years, some new code has been added again! Changes in this version:
 <P>
