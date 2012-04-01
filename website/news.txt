@@ -6,9 +6,9 @@
 v0.31 is released. <P>
 Changes in this version:
 <P>
-* fix compiler check in configure
-* fix missing include (QT4 gui)
-* fix linking of FLTK version
+* fix compiler check in configure<BR>
+* fix missing include (QT4 gui)<BR>
+* fix linking of FLTK version<BR>
 <BR>
 <I>Sun Apr  1 18:36:15 CEST 2012 --Ivo</I>
 </DIV>
