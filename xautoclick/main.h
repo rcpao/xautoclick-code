@@ -1,6 +1,22 @@
 #ifndef __MAIN_H__
 #define __MAIN_H_
 
+#define PREDELAY_DEFAULT 2000
+#define PREDELAY_MIN 0
+#define PREDELAY_MAX 1<<30
+
+#define INTERVAL_DEFAULT 1000
+#define INTERVAL_MIN 0
+#define INTERVAL_MAX 1<<30
+
+#define RANDOM_FACTOR_DEFAULT 250
+#define RANDOM_FACTOR_MIN 0
+#define RANDOM_FACTOR_MAX 10240
+
+#define NUM_CLICKS_DEFAULT 32
+#define NUM_CLICKS_MIN -1 /* -1 = infinite */
+#define NUM_CLICKS_MAX INT_MAX
+
 typedef enum button_e {
     BUTTON_TAP = 0,
     BUTTON_STOP,

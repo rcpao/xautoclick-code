@@ -50,7 +50,10 @@ void common_start_button(void) {
 void common_alarm_callback(void) {
     int interval, randomfactor, sign, rv, alarmtime;
 
-    if (!counter) return;
+    if (!counter) {
+      common_stop_button();
+      return;
+    }
 
 #ifdef DEBUG
     printf("alarm_callback\n");
@@ -74,7 +77,7 @@ void common_alarm_callback(void) {
     alarmtime = interval + rv;
     if (alarmtime < 1) alarmtime = 1;
 
-    counter--;
+    if (counter > 0) counter--;
     if (counter) set_alarm(alarmtime);
     else         common_stop_button();
 }
@@ -82,7 +85,7 @@ void common_alarm_callback(void) {
 static void calculate_average(int *buffer, int length, int *average, int *min,
                                                                 int *max) {
     int sum = 0, x, v;
-    
+
     *min =  65536;
     *max = -65536;
 
